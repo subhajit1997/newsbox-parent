@@ -1,0 +1,3 @@
+com/newsbox/entity/NewsResponse.class
+com/newsbox/entity/Article.class
+com/newsbox/commons/NewsAPIAggregatorConstants.class

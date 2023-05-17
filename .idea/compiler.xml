@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="newsbox-util" />
+        <module name="newsbox-indexing" />
+        <module name="newsbox-aggregator" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="newsbox" target="17" />
+      <module name="newsbox-aggregator" target="17" />
+      <module name="newsbox-indexing" target="17" />
+      <module name="newsbox-util" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
