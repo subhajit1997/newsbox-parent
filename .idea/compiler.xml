@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="newsbox-util" />
         <module name="newsbox-indexing" />
+        <module name="solrconfig" />
         <module name="newsbox-aggregator" />
       </profile>
     </annotationProcessing>
@@ -16,6 +17,7 @@
       <module name="newsbox-aggregator" target="17" />
       <module name="newsbox-indexing" target="17" />
       <module name="newsbox-util" target="17" />
+      <module name="solrconfig" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>

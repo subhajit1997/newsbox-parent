@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema name="example" version="1.6">
+ 
+    <!-- doc values are enabled by default for primitive types such as long so we don't index the version field  -->
+    <field name="_version_" type="plong" indexed="false" stored="false"/>
+    <field name="id" type="string" indexed="true" stored="true" required="true" multiValued="false" /> 
+
+    <fieldType name="text_general" class="solr.TextField" positionIncrementGap="100">
+      <analyzer type="index">
+        <tokenizer class="solr.StandardTokenizerFactory" />
+        <filter class="solr.LowerCaseFilterFactory" />
+      </analyzer>
+      <analyzer type="query">
+        <tokenizer class="solr.StandardTokenizerFactory"/> 
+        <filter class="solr.LowerCaseFilterFactory"/>
+      </analyzer>
+    </fieldType>
+
+    <uniqueKey>id</uniqueKey>
+    <fieldType name="date" class="solr.TrieDateField" precisionStep="0" positionIncrementGap="0" />
+    <field name="text" type="text_general" indexed="true" stored="true"/>
+
+    <field name="title" type="text_general" indexed="true" stored="true"/>
+    <field name="lang" type="string" indexed="true" stored="true"/>
+    <field name="description" type="text_general" indexed="true" stored="true"/>
+    <field name="url" type="string" indexed="true" stored="true"/>
+    <field name="publishedAt" type="date" indexed="true" stored="true"/>
+    <field name="author" type="text_general" indexed="true" stored="true"/>
+    <field name="category" type="string" indexed="true" stored="true"/>
+    <field name="imageURL" type="string" indexed="true" stored="true"/>
+
+    <!-- The StrField type is not analyzed, but indexed/stored verbatim. -->
+    <fieldType name="string" class="solr.StrField" sortMissingLast="true" />
+    <fieldType name="plong" class="solr.LongPointField" docValues="true"/>
+
+
+</schema>

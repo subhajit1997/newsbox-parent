@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/newsbox-aggregator/newsbox-aggregator.iml" filepath="$PROJECT_DIR$/newsbox-aggregator/newsbox-aggregator.iml" />
       <module fileurl="file://$PROJECT_DIR$/newsbox-indexing/newsbox-indexing.iml" filepath="$PROJECT_DIR$/newsbox-indexing/newsbox-indexing.iml" />
       <module fileurl="file://$PROJECT_DIR$/newsbox-util/newsbox-util.iml" filepath="$PROJECT_DIR$/newsbox-util/newsbox-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/solrconfig/solrconfig.iml" filepath="$PROJECT_DIR$/solrconfig/solrconfig.iml" />
     </modules>
   </component>
 </project>

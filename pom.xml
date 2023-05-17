@@ -12,6 +12,7 @@
         <module>newsbox-aggregator</module>
         <module>newsbox-indexing</module>
         <module>newsbox-util</module>
+        <module>solrconfig</module>
     </modules>
 
     <properties>
